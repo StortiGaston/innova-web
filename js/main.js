@@ -4,7 +4,7 @@
 
 // EDITAR: número de WhatsApp en formato internacional, sin "+", espacios ni guiones.
 // Ejemplo Argentina: 54 9 + característica + número → "5493511234567"
-const WHATSAPP_NUMBER = "5490000000000";
+const WHATSAPP_NUMBER = "5493794594631";
 const WHATSAPP_DEFAULT_MSG = "¡Hola INNOVA! Quisiera hacer una consulta.";
 
 const $ = (sel, ctx = document) => ctx.querySelector(sel);
