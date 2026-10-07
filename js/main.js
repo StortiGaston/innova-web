@@ -104,7 +104,7 @@ async function typeLoop() {
     await sleep(2200);
   }
 }
-if (!reduceMotion) typeLoop();
+if (typedEl && !reduceMotion) typeLoop();
 
 /* ---------- Contadores ---------- */
 const counterObserver = new IntersectionObserver(
@@ -197,38 +197,44 @@ $$(".filter").forEach((btn) => {
 /* ---------- Contacto por WhatsApp ---------- */
 $("#waFloat").href = waLink(WHATSAPP_DEFAULT_MSG);
 
+// Botones con mensaje propio (por ejemplo, en las páginas de cada servicio)
+$$("[data-wa]").forEach((a) => (a.href = waLink(a.dataset.wa)));
+
+// El formulario solo existe en la página de inicio
 const form = $("#contactForm");
 const note = $("#formNote");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  let valid = true;
-  $$("[required]", form).forEach((input) => {
-    const field = input.closest(".field");
-    const ok = input.value.trim() !== "";
-    field.classList.toggle("error", !ok);
-    if (!ok) valid = false;
+if (form) {
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let valid = true;
+    $$("[required]", form).forEach((input) => {
+      const field = input.closest(".field");
+      const ok = input.value.trim() !== "";
+      field.classList.toggle("error", !ok);
+      if (!ok) valid = false;
+    });
+
+    if (!valid) {
+      note.textContent = "Completá los campos obligatorios.";
+      return;
+    }
+
+    const { nombre, empresa, servicio, mensaje } = Object.fromEntries(new FormData(form));
+    const text =
+      `¡Hola INNOVA! Soy ${nombre.trim()}` +
+      (empresa.trim() ? ` de ${empresa.trim()}` : "") +
+      `.\nMe interesa: ${servicio}.\n\n${mensaje.trim()}`;
+
+    window.open(waLink(text), "_blank", "noopener");
+    note.textContent = "¡Listo! Abrimos WhatsApp con tu mensaje.";
+    form.reset();
   });
 
-  if (!valid) {
-    note.textContent = "Completá los campos obligatorios.";
-    return;
-  }
-
-  const { nombre, empresa, servicio, mensaje } = Object.fromEntries(new FormData(form));
-  const text =
-    `¡Hola INNOVA! Soy ${nombre.trim()}` +
-    (empresa.trim() ? ` de ${empresa.trim()}` : "") +
-    `.\nMe interesa: ${servicio}.\n\n${mensaje.trim()}`;
-
-  window.open(waLink(text), "_blank", "noopener");
-  note.textContent = "¡Listo! Abrimos WhatsApp con tu mensaje.";
-  form.reset();
-});
-
-$$("input, textarea, select", form).forEach((el) =>
-  el.addEventListener("input", () => el.closest(".field").classList.remove("error"))
-);
+  $$("input, textarea, select", form).forEach((el) =>
+    el.addEventListener("input", () => el.closest(".field").classList.remove("error"))
+  );
+}
 
 /* ---------- Año del footer ---------- */
 $("#year").textContent = new Date().getFullYear();

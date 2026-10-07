@@ -10,6 +10,7 @@ Abrí `index.html` en el navegador (doble clic) o usá la extensión *Live Serve
 index.html      → contenido de todas las secciones
 css/styles.css  → estilos y animaciones
 js/main.js      → interacciones (menú, animaciones, filtro, WhatsApp)
+servicios/      → una página por cada servicio
 img/            → fotos del equipo y capturas de proyectos
 ```
 
@@ -21,6 +22,7 @@ img/            → fotos del equipo y capturas de proyectos
 | Foto de perfil | Guardar en `img/` y reemplazar `<span class="member__initials">` por `<img src="img/nombre.jpg" alt="Nombre">` |
 | Proyectos del portafolio | `index.html` → sección `#proyectos` (categoría en `data-category`: `web`, `app` o `sistema`) |
 | Email, ciudad, horarios, redes | `index.html` → secciones `#contacto` y footer |
+| Contenido de cada servicio (qué incluye, proceso, tecnologías) | `servicios/<servicio>.html` |
 | Estadísticas del inicio | `index.html` → atributos `data-target` de `.counter` |
 
 ## Trabajo en equipo
