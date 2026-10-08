@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Servicios | INNOVA</title>
-  <meta name="description" content="Servicios de INNOVA: desarrollo web, software a medida, apps móviles, infraestructura web, ciberseguridad y consultoría IT." />
+  <title>Proyectos | INNOVA</title>
+  <meta name="description" content="Proyectos realizados por INNOVA: sitios web, aplicaciones móviles y sistemas a medida." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet" />
@@ -32,8 +32,8 @@
       <nav class="nav__menu" id="menu" aria-label="Principal">
         <a href="index.html#inicio" class="nav__link">Inicio</a>
         <a href="nosotros.html" class="nav__link">Nosotros</a>
-        <a href="servicios.html" class="nav__link active">Servicios</a>
-        <a href="proyectos.html" class="nav__link">Proyectos</a>
+        <a href="servicios.html" class="nav__link">Servicios</a>
+        <a href="proyectos.html" class="nav__link active">Proyectos</a>
         <a href="contacto.html" class="nav__link nav__link--cta">Contacto</a>
       </nav>
       <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
@@ -48,60 +48,65 @@
       <div class="container">
         <nav class="breadcrumb reveal" aria-label="Ruta">
           <a href="index.html">Inicio</a><span>/</span>
-          <span aria-current="page">Servicios</span>
+          <span aria-current="page">Proyectos</span>
         </nav>
-        <p class="eyebrow reveal">Qué hacemos</p>
-        <h1 class="page-hero__title reveal">Nuestros <span class="gradient-text">servicios</span></h1>
-        <p class="hero__lead reveal">Soluciones integrales para cada etapa de tu proyecto digital. Elegí un servicio para ver qué incluye, cómo trabajamos y con qué tecnologías.</p>
+        <p class="eyebrow reveal">Portafolio</p>
+        <h1 class="page-hero__title reveal">Proyectos <span class="gradient-text">realizados</span></h1>
+        <p class="hero__lead reveal">Algunos de los trabajos que diseñamos y desarrollamos para nuestros clientes.</p>
       </div>
     </section>
 
-    <!-- ===================== LISTA DE SERVICIOS ===================== -->
+    <!-- ===================== PROYECTOS / PORTAFOLIO ===================== -->
+    <!-- EDITAR: reemplazar por proyectos reales. Para usar captura: dentro de .project__media
+         agregar <img src="img/proyecto.jpg" alt="..." /> en lugar del mockup. -->
     <section class="section section--alt">
       <div class="container">
-        <div class="services">
-          <a class="service reveal" href="servicios/desarrollo-web.html">
-            <span class="service__num">01</span>
-            <div class="service__icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></div>
-            <h3>Desarrollo Web</h3>
-            <p>Sitios institucionales, landing pages y tiendas online modernas, rápidas y adaptadas a todos los dispositivos.</p>
-            <span class="service__more">Ver más →</span>
-          </a>
-          <a class="service reveal" href="servicios/software-a-medida.html">
-            <span class="service__num">02</span>
-            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg></div>
-            <h3>Software a Medida</h3>
-            <p>Sistemas de gestión y aplicaciones diseñadas específicamente para los procesos de tu negocio.</p>
-            <span class="service__more">Ver más →</span>
-          </a>
-          <a class="service reveal" href="servicios/apps-moviles.html">
-            <span class="service__num">03</span>
-            <div class="service__icon"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
-            <h3>Apps Móviles</h3>
-            <p>Aplicaciones para Android e iOS con experiencias de usuario intuitivas y atractivas.</p>
-            <span class="service__more">Ver más →</span>
-          </a>
-          <a class="service reveal" href="servicios/infraestructura-web.html">
-            <span class="service__num">04</span>
-            <div class="service__icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01M11 6.5h6M11 17.5h6"/></svg></div>
-            <h3>Infraestructura Web</h3>
-            <p>Hosting, servidores, dominios y despliegues para que tu sitio o sistema esté siempre en línea, rápido y seguro.</p>
-            <span class="service__more">Ver más →</span>
-          </a>
-          <a class="service reveal" href="servicios/ciberseguridad.html">
-            <span class="service__num">05</span>
-            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M12 2 3 6v6c0 5 3.8 9.3 9 10 5.2-.7 9-5 9-10V6l-9-4z"/></svg></div>
-            <h3>Ciberseguridad</h3>
-            <p>Auditorías, buenas prácticas y protección de la información de tu empresa y tus clientes.</p>
-            <span class="service__more">Ver más →</span>
-          </a>
-          <a class="service reveal" href="servicios/consultoria-it.html">
-            <span class="service__num">06</span>
-            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V16h8v-1.3A7 7 0 0 0 12 2z"/></svg></div>
-            <h3>Consultoría IT</h3>
-            <p>Diagnóstico tecnológico, planificación y acompañamiento en la transformación digital.</p>
-            <span class="service__more">Ver más →</span>
-          </a>
+        <div class="filters reveal" role="tablist">
+          <button class="filter active" data-filter="all">Todos</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="app">Apps</button>
+          <button class="filter" data-filter="sistema">Sistemas</button>
+        </div>
+
+        <div class="projects">
+          <article class="project reveal" data-category="web">
+            <div class="project__media" style="--c1:#6d5dfc;--c2:#22d3ee">
+              <div class="mock"><span></span><span></span><span></span><i></i><i></i><i></i></div>
+            </div>
+            <div class="project__body">
+              <span class="project__cat">Web</span>
+              <h3>Tienda Online</h3>
+              <p>E‑commerce responsive con catálogo, carrito y pasarela de pagos.</p>
+              <ul class="tags tags--sm"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <a href="#" class="project__link">Ver proyecto →</a>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="app">
+            <div class="project__media" style="--c1:#34d399;--c2:#3b82f6">
+              <div class="mock mock--phone"><span></span><i></i><i></i><i></i></div>
+            </div>
+            <div class="project__body">
+              <span class="project__cat">App</span>
+              <h3>App de Turnos</h3>
+              <p>Aplicación móvil para reservar turnos en consultorios y centros de salud.</p>
+              <ul class="tags tags--sm"><li>Mobile</li><li>UX/UI</li></ul>
+              <a href="#" class="project__link">Ver proyecto →</a>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="sistema">
+            <div class="project__media" style="--c1:#a78bfa;--c2:#ec4899">
+              <div class="mock mock--dash"><span></span><span></span><span></span><i></i><i></i><i></i></div>
+            </div>
+            <div class="project__body">
+              <span class="project__cat">Sistema</span>
+              <h3>Dashboard de Ventas</h3>
+              <p>Panel de control con métricas en tiempo real para la toma de decisiones.</p>
+              <ul class="tags tags--sm"><li>Datos</li><li>Gráficos</li></ul>
+              <a href="#" class="project__link">Ver proyecto →</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -110,10 +115,10 @@
     <section class="section">
       <div class="container">
         <div class="cta reveal">
-          <h2>¿No sabés qué servicio necesitás?</h2>
-          <p>Contanos tu idea y te ayudamos a elegir la mejor opción. Te respondemos por WhatsApp a la brevedad.</p>
+          <h2>¿Querés que tu proyecto sea el próximo?</h2>
+          <p>Contanos tu idea y te respondemos por WhatsApp a la brevedad.</p>
           <div class="hero__actions">
-            <a href="#" class="btn btn--whatsapp magnetic" data-wa="¡Hola INNOVA! Quisiera consultar por sus servicios." target="_blank" rel="noopener">
+            <a href="#" class="btn btn--whatsapp magnetic" data-wa="¡Hola INNOVA! Vi sus proyectos y quisiera consultar por uno propio." target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6-.3.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1 1 2 1.3 2.3 1.4.3.1.4.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.6-.1 1.1z"/></svg>
               Escribinos por WhatsApp
             </a>
