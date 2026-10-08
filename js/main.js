@@ -45,8 +45,8 @@ function onScroll() {
 window.addEventListener("scroll", onScroll, { passive: true });
 onScroll();
 
-// Link activo según la sección visible
-const sections = $$("main section[id]");
+// Link activo según la sección visible (solo secciones que tienen link en el menú)
+const sections = $$("main section[id]").filter((s) => $(`.nav__link[href="#${s.id}"]`));
 const sectionObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {

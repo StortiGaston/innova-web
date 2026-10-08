@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosotros | INNOVA</title>
+  <meta name="description" content="Conocé a INNOVA: nuestra misión, visión, valores y el equipo que lleva adelante cada proyecto." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="img/logo-icono.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Fondo animado -->
+  <div class="bg" aria-hidden="true">
+    <span class="blob blob--1"></span>
+    <span class="blob blob--2"></span>
+    <span class="blob blob--3"></span>
+    <div class="grid-overlay"></div>
+  </div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
+
+  <!-- ===================== NAVEGACIÓN ===================== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html#inicio" class="logo">
+        <span class="logo__mark"><img src="img/logo-icono.png" alt="" /></span>
+        <span class="logo__text">INNOVA</span>
+      </a>
+      <nav class="nav__menu" id="menu" aria-label="Principal">
+        <a href="index.html#inicio" class="nav__link">Inicio</a>
+        <a href="nosotros.html" class="nav__link active">Nosotros</a>
+        <a href="index.html#servicios" class="nav__link">Servicios</a>
+        <a href="index.html#proyectos" class="nav__link">Proyectos</a>
+        <a href="index.html#contacto" class="nav__link nav__link--cta">Contacto</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== ENCABEZADO ===================== -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb reveal" aria-label="Ruta">
+          <a href="index.html">Inicio</a><span>/</span>
+          <span aria-current="page">Nosotros</span>
+        </nav>
+        <p class="eyebrow reveal">Quiénes somos</p>
+        <h1 class="page-hero__title reveal">Conocé a <span class="gradient-text">INNOVA</span></h1>
+        <p class="hero__lead reveal">Nuestra identidad y las personas que llevan adelante cada proyecto.</p>
+      </div>
+    </section>
+
+    <!-- ===================== NOSOTROS / IDENTIDAD ===================== -->
+    <section class="section" id="nosotros">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Quiénes somos</p>
+          <h2 class="section__title">Nuestra identidad</h2>
+          <p class="section__lead">
+            En INNOVA ayudamos a pequeños y medianos emprendimientos de Corrientes a mejorar su presencia digital mediante el desarrollo de páginas web y aplicaciones personalizadas.
+            Nos diferenciamos por ofrecer soluciones accesibles, modernas y fáciles de utilizar, acompañando al cliente durante el proceso.
+            Además, combinamos diseño, tecnología e inteligencia artificial para crear productos digitales atractivos, pensados para cada usuario.
+          </p>
+        </div>
+
+        <div class="identity">
+          <article class="card tilt reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg>
+            </div>
+            <h3>Misión</h3>
+            <p>Impulsar la transformación digital de nuestros clientes con soluciones tecnológicas a medida, eficientes y escalables.</p>
+          </article>
+          <article class="card tilt reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3>Visión</h3>
+            <p>Ser la consultora de referencia para pymes de la región, reconocida por su innovación, cercanía y calidad.</p>
+          </article>
+          <article class="card tilt reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg>
+            </div>
+            <h3>Valores</h3>
+            <ul class="tags">
+              <li>Innovación</li><li>Transparencia</li><li>Compromiso</li><li>Trabajo en equipo</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EQUIPO ===================== -->
+    <!-- EDITAR: reemplazar nombres, roles, descripciones y links por los datos reales del equipo.
+         Para usar foto: reemplazar <span class="member__initials">..</span> por <img src="img/nombre.jpg" alt="Nombre" /> -->
+    <section class="section section--alt" id="equipo">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Las personas detrás</p>
+          <h2 class="section__title">Nuestro equipo</h2>
+          <p class="section__lead">Cada integrante aporta su experiencia para llevar adelante cada proyecto.</p>
+        </div>
+
+        <div class="team">
+          <article class="member reveal">
+            <div class="member__avatar"><img src="img/equipo/gaston-storti.jpg" alt="Gastón Storti" /></div>
+            <h3 class="member__name">Gastón Storti</h3>
+            <p class="member__role">Infraestructura y DevOps</p>
+            <p class="member__bio">Se asegura de que cada proyecto tenga dónde correr: administra servidores, redes y bases de datos, y mantiene entornos estables para probar y desplegar. Gestiona los backups y la seguridad, y documenta la infraestructura para que todo el equipo pueda entenderla.</p>
+            <div class="member__social">
+              <a href="https://www.linkedin.com/in/gaston-storti-8a5a96236/" target="_blank" rel="noopener" aria-label="LinkedIn de Gastón Storti"><svg viewBox="0 0 24 24"><path d="M4 9h4v11H4zM6 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM10 9h4v1.6c.6-1 1.9-1.9 3.6-1.9 3.3 0 4.4 2 4.4 5.4V20h-4v-5.2c0-1.4-.3-2.6-1.8-2.6s-2.2 1.1-2.2 2.6V20h-4z"/></svg></a>
+              <a href="https://github.com/StortiGaston" target="_blank" rel="noopener" aria-label="GitHub de Gastón Storti"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></a>
+            </div>
+          </article>
+
+          <article class="member reveal">
+            <div class="member__avatar"><img src="img/equipo/agostina-perez.jpg" alt="Agostina Pérez" /></div>
+            <h3 class="member__name">Agostina Pérez</h3>
+            <p class="member__role">Diseño UX/UI</p>
+            <p class="member__bio">Se encarga del diseño y la parte visual de los proyectos: crea interfaces atractivas, claras y fáciles de usar, pensadas para la experiencia del usuario. Se apoya en herramientas de diseño e inteligencia artificial para aportar ideas y mejorar cada proyecto.</p>
+            <div class="member__social">
+              <a href="https://www.linkedin.com/in/agostinasoledadp%C3%A9rez5b73b9392/" target="_blank" rel="noopener" aria-label="LinkedIn de Agostina Pérez"><svg viewBox="0 0 24 24"><path d="M4 9h4v11H4zM6 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM10 9h4v1.6c.6-1 1.9-1.9 3.6-1.9 3.3 0 4.4 2 4.4 5.4V20h-4v-5.2c0-1.4-.3-2.6-1.8-2.6s-2.2 1.1-2.2 2.6V20h-4z"/></svg></a>
+              <a href="https://github.com/PerezAgostina" target="_blank" rel="noopener" aria-label="GitHub de Agostina Pérez"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></a>
+            </div>
+          </article>
+
+          <article class="member reveal">
+            <div class="member__avatar"><img src="img/equipo/sasha-roa.jpg" alt="Sasha Ailén Roa" /></div>
+            <h3 class="member__name">Sasha Ailén Roa</h3>
+            <p class="member__role">Análisis Funcional y Gestión de Proyectos</p>
+            <p class="member__bio">Conecta a los clientes con el equipo: escucha sus necesidades, entiende sus problemas y piensa qué solución tecnológica puede ayudarlos. Transmite los requerimientos a desarrollo y diseño, y organiza las tareas y los tiempos para que el resultado cumpla con lo que cada cliente necesita.</p>
+            <div class="member__social">
+              <a href="https://www.linkedin.com/in/sasha-ailen-roa-4140ab436/" target="_blank" rel="noopener" aria-label="LinkedIn de Sasha Ailén Roa"><svg viewBox="0 0 24 24"><path d="M4 9h4v11H4zM6 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM10 9h4v1.6c.6-1 1.9-1.9 3.6-1.9 3.3 0 4.4 2 4.4 5.4V20h-4v-5.2c0-1.4-.3-2.6-1.8-2.6s-2.2 1.1-2.2 2.6V20h-4z"/></svg></a>
+              <a href="https://github.com/sasharoatsds-rgb" target="_blank" rel="noopener" aria-label="GitHub de Sasha Ailén Roa"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></a>
+            </div>
+          </article>
+
+          <article class="member reveal">
+            <div class="member__avatar"><img src="img/equipo/santiago-lafuente.jpg" alt="Santiago Lafuente" /></div>
+            <h3 class="member__name">Santiago Lafuente</h3>
+            <p class="member__role">Desarrollo de Software</p>
+            <p class="member__bio">Se encarga de resolver los problemas que surgen durante el desarrollo y de que el software funcione correctamente, sin bugs. Además, optimiza todo lo necesario para que la navegación de la web sea fluida, rápida y accesible para cualquier persona.</p>
+            <div class="member__social">
+              <a href="https://www.linkedin.com/in/santiago-lafuente-8620aa436" target="_blank" rel="noopener" aria-label="LinkedIn de Santiago Lafuente"><svg viewBox="0 0 24 24"><path d="M4 9h4v11H4zM6 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM10 9h4v1.6c.6-1 1.9-1.9 3.6-1.9 3.3 0 4.4 2 4.4 5.4V20h-4v-5.2c0-1.4-.3-2.6-1.8-2.6s-2.2 1.1-2.2 2.6V20h-4z"/></svg></a>
+              <a href="https://github.com/santy56-lab" target="_blank" rel="noopener" aria-label="GitHub de Santiago Lafuente"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></a>
+            </div>
+          </article>
+
+          <article class="member reveal">
+            <div class="member__avatar"><img src="img/equipo/candela-may.jpg" alt="Candela May" /></div>
+            <h3 class="member__name">Candela May</h3>
+            <p class="member__role">Gestión de Contenidos y Estrategia de Comunicación</p>
+            <p class="member__bio">Se encarga de los contenidos y la comunicación de INNOVA: estructura el relato institucional y define los lineamientos editoriales para que la propuesta de valor llegue clara a cada audiencia. Se apoya en herramientas de inteligencia artificial para preparar y pulir los textos.</p>
+            <div class="member__social">
+              <a href="https://www.linkedin.com/in/candela-may-gim%C3%A9nez-482772406/" target="_blank" rel="noopener" aria-label="LinkedIn de Candela May"><svg viewBox="0 0 24 24"><path d="M4 9h4v11H4zM6 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM10 9h4v1.6c.6-1 1.9-1.9 3.6-1.9 3.3 0 4.4 2 4.4 5.4V20h-4v-5.2c0-1.4-.3-2.6-1.8-2.6s-2.2 1.1-2.2 2.6V20h-4z"/></svg></a>
+              <a href="https://github.com/candemay" target="_blank" rel="noopener" aria-label="GitHub de Candela May"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="index.html#inicio" class="logo"><span class="logo__mark"><img src="img/logo-icono.png" alt="" /></span><span class="logo__text">INNOVA</span></a>
+        <p class="footer__text">Consultora de tecnología. Transformamos ideas en soluciones digitales.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="index.html#servicios">Servicios</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="index.html#proyectos">Proyectos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="servicios/desarrollo-web.html">Desarrollo Web</a></li>
+          <li><a href="servicios/software-a-medida.html">Software a Medida</a></li>
+          <li><a href="servicios/apps-moviles.html">Apps Móviles</a></li>
+          <li><a href="servicios/infraestructura-web.html">Infraestructura Web</a></li>
+          <li><a href="servicios/ciberseguridad.html">Ciberseguridad</a></li>
+          <li><a href="servicios/consultoria-it.html">Consultoría IT</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Seguinos</h4>
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/in/innova-consultora-tecnol%C3%B3gica-b8ab79437/" target="_blank" rel="noopener" aria-label="LinkedIn de INNOVA"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> INNOVA. Todos los derechos reservados.</p>
+      <a href="#" class="to-top" aria-label="Volver arriba">↑</a>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6-.3.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1 1 2 1.3 2.3 1.4.3.1.4.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.6-.1 1.1z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

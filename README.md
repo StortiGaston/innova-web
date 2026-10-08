@@ -7,7 +7,8 @@ Abrí `index.html` en el navegador (doble clic) o usá la extensión *Live Serve
 
 ## Estructura
 ```
-index.html      → contenido de todas las secciones
+index.html      → inicio, servicios, proyectos y contacto
+nosotros.html   → identidad (misión, visión, valores) y equipo
 css/styles.css  → estilos y animaciones
 js/main.js      → interacciones (menú, animaciones, filtro, WhatsApp)
 servicios/      → una página por cada servicio
@@ -18,10 +19,10 @@ img/            → fotos del equipo y capturas de proyectos
 | Qué | Dónde |
 |---|---|
 | Número de WhatsApp | `js/main.js` → `WHATSAPP_NUMBER` (formato `549XXXXXXXXXX`) |
-| Nombre, rol y descripción de cada integrante | `index.html` → sección `#equipo` |
+| Nombre, rol y descripción de cada integrante | `nosotros.html` → sección `#equipo` |
 | Foto de perfil | Guardar en `img/` y reemplazar `<span class="member__initials">` por `<img src="img/nombre.jpg" alt="Nombre">` |
 | Proyectos del portafolio | `index.html` → sección `#proyectos` (categoría en `data-category`: `web`, `app` o `sistema`) |
-| Email, ciudad, horarios, redes | `index.html` → secciones `#contacto` y footer |
+| Dirección, horarios, redes | `index.html` → secciones `#contacto` y footer |
 | Contenido de cada servicio (qué incluye, proceso, tecnologías) | `servicios/<servicio>.html` |
 | Estadísticas del inicio | `index.html` → atributos `data-target` de `.counter` |
 
