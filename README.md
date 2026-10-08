@@ -8,6 +8,7 @@ Abrí `index.html` en el navegador (doble clic) o usá la extensión *Live Serve
 ## Estructura
 ```
 index.html      → inicio, servicios, proyectos y contacto
+servicios.html  → listado de servicios (cada uno abre su página en servicios/)
 nosotros.html   → identidad (misión, visión, valores) y equipo
 css/styles.css  → estilos y animaciones
 js/main.js      → interacciones (menú, animaciones, filtro, WhatsApp)
