@@ -1,38 +1,77 @@
-# INNOVA — Consultora de Tecnología
+<p align="center">
+  <img src="img/logo-icono.png" alt="INNOVA" width="96" />
+</p>
 
-Sitio web institucional de INNOVA (trabajo práctico de la facultad). Hecho con **HTML, CSS y JavaScript** puro, sin dependencias.
+<h1 align="center">INNOVA — Consultora de Tecnología</h1>
 
-## Ver el sitio
-Abrí `index.html` en el navegador (doble clic) o usá la extensión *Live Server* de VS Code.
+<p align="center">
+  <strong>Transformamos ideas en soluciones digitales.</strong><br />
+  Corrientes, Argentina
+</p>
 
-## Estructura
-```
-index.html      → inicio, servicios, proyectos y contacto
-servicios.html  → listado de servicios (cada uno abre su página en servicios/)
-nosotros.html   → identidad (misión, visión, valores) y equipo
-proyectos.html  → portafolio completo con filtros
-contacto.html   → formulario de WhatsApp, dirección y mapa
-css/styles.css  → estilos y animaciones
-js/main.js      → interacciones (menú, animaciones, filtro, WhatsApp)
-servicios/      → una página por cada servicio
-img/            → fotos del equipo y capturas de proyectos
-```
+---
 
-## Qué tiene que cargar cada uno
-| Qué | Dónde |
+## Quiénes somos
+
+**INNOVA** es una consultora de tecnología que ayuda a pequeños y medianos emprendimientos de Corrientes a mejorar su presencia digital con sitios web y aplicaciones a medida.
+
+Ofrecemos soluciones **accesibles, modernas y fáciles de usar**, y acompañamos a cada cliente durante todo el proceso: desde el diagnóstico inicial hasta la puesta en marcha. Combinamos diseño, tecnología e inteligencia artificial para crear productos digitales atractivos, pensados para quienes los usan.
+
+| | |
 |---|---|
-| Número de WhatsApp | `js/main.js` → `WHATSAPP_NUMBER` (formato `549XXXXXXXXXX`) |
-| Nombre, rol y descripción de cada integrante | `nosotros.html` → sección `#equipo` |
-| Foto de perfil | Guardar en `img/` y reemplazar `<span class="member__initials">` por `<img src="img/nombre.jpg" alt="Nombre">` |
-| Proyectos del portafolio | `proyectos.html` (y los destacados en `index.html` → `#proyectos`) (categoría en `data-category`: `web`, `app` o `sistema`) |
-| Dirección, horarios, redes | `contacto.html`, `index.html` → `#contacto` y footer de cada página |
-| Contenido de cada servicio (qué incluye, proceso, tecnologías) | `servicios/<servicio>.html` |
-| Estadísticas del inicio | `index.html` → atributos `data-target` de `.counter` |
+| **Misión** | Impulsar la transformación digital de nuestros clientes con soluciones tecnológicas a medida, eficientes y escalables. |
+| **Visión** | Ser la consultora de referencia para las pymes de la región, reconocida por su innovación, cercanía y calidad. |
+| **Valores** | Innovación · Transparencia · Compromiso · Trabajo en equipo |
 
-## Trabajo en equipo
-```bash
-git pull                 # traer cambios antes de empezar
-git add .
-git commit -m "Cargo mis datos en la sección equipo"
-git push
-```
+## Servicios
+
+| Servicio | Qué ofrecemos |
+|---|---|
+| **Desarrollo Web** | Sitios institucionales, landing pages y tiendas online modernas, rápidas y adaptadas a todos los dispositivos. |
+| **Software a Medida** | Sistemas de gestión y aplicaciones diseñadas para los procesos de cada negocio. |
+| **Apps Móviles** | Aplicaciones para Android e iOS con experiencias de usuario intuitivas y atractivas. |
+| **Infraestructura Web** | Hosting, servidores, dominios y despliegues para que cada sitio esté siempre en línea, rápido y seguro. |
+| **Ciberseguridad** | Auditorías, buenas prácticas y protección de la información de la empresa y sus clientes. |
+| **Consultoría IT** | Diagnóstico tecnológico, planificación y acompañamiento en la transformación digital. |
+
+## El sitio web
+
+Este repositorio contiene el sitio institucional de INNOVA, nuestra carta de presentación ante clientes.
+
+### Secciones
+
+- **Inicio**: presentación de la consultora, servicios destacados, proyectos recientes y contacto directo.
+- **Nosotros**: nuestra identidad (misión, visión y valores) y el equipo detrás de cada proyecto.
+- **Servicios**: catálogo completo, con una página por servicio que detalla qué incluye, cómo trabajamos y con qué tecnologías.
+- **Proyectos**: portafolio de trabajos realizados, filtrable por categoría (web, apps y sistemas).
+- **Contacto**: formulario, dirección, horarios de atención y mapa de ubicación.
+
+### Funcionalidades destacadas
+
+- **Contacto inmediato por WhatsApp**: el formulario arma el mensaje con los datos de la consulta y lo abre directamente en WhatsApp. También hay un botón flotante siempre visible.
+- **Portafolio con filtros**: los proyectos se filtran por categoría al instante, sin recargar la página.
+- **Diseño adaptable**: la experiencia es igual de cuidada en computadoras, tablets y celulares.
+- **Animaciones y microinteracciones**: textos que se escriben solos, contadores animados, elementos que aparecen al hacer scroll, botones con efecto magnético y tarjetas que reaccionan al mouse.
+- **Navegación clara**: menú fijo que indica la sección actual, barra de progreso de lectura y botón para volver arriba.
+- **Accesible**: respeta la preferencia de movimiento reducido del sistema e incluye etiquetas para lectores de pantalla.
+- **Liviano y rápido**: hecho con HTML, CSS y JavaScript puros, sin librerías ni dependencias externas.
+
+## Equipo
+
+| Integrante | Rol |
+|---|---|
+| **Gastón Storti** | Infraestructura y DevOps |
+| **Agostina Pérez** | Diseño UX/UI |
+| **Sasha Ailén Roa** | Análisis Funcional y Gestión de Proyectos |
+| **Santiago Lafuente** | Desarrollo de Software |
+| **Candela May** | Gestión de Contenidos y Estrategia de Comunicación |
+
+## Contacto
+
+📍 Av. Sarmiento 1953, Corrientes, Argentina
+🕘 Lunes a viernes, de 9 a 18 h
+💼 [LinkedIn](https://www.linkedin.com/in/innova-consultora-tecnol%C3%B3gica-b8ab79437/)
+
+---
+
+<p align="center"><sub>Para ver el sitio, abrí <code>index.html</code> en cualquier navegador.</sub></p>
