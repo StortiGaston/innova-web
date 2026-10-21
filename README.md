@@ -53,6 +53,8 @@ Este repositorio contiene el sitio institucional de INNOVA, nuestra carta de pre
 - **Diseño adaptable**: la experiencia es igual de cuidada en computadoras, tablets y celulares.
 - **Animaciones y microinteracciones**: textos que se escriben solos, contadores animados, elementos que aparecen al hacer scroll, botones con efecto magnético y tarjetas que reaccionan al mouse.
 - **Navegación clara**: menú fijo que indica la sección actual, barra de progreso de lectura y botón para volver arriba.
+- **Modo claro y oscuro**: botón en el menú para cambiar de tema. La primera vez respeta la preferencia del sistema y después recuerda la elección.
+- **Español e inglés**: botón ES/EN en el menú que traduce la página al instante, sin recargarla, incluidos los mensajes de WhatsApp. Las traducciones están en `js/translations.js`: si cambiás un texto en el HTML, actualizá también su entrada ahí.
 - **Accesible**: respeta la preferencia de movimiento reducido del sistema e incluye etiquetas para lectores de pantalla.
 - **Liviano y rápido**: hecho con HTML, CSS y JavaScript puros, sin librerías ni dependencias externas.
 

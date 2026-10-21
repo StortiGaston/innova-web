@@ -90,13 +90,13 @@ async function typeLoop() {
   let i = 0;
   await sleep(2500);
   while (true) {
-    const current = words[i];
+    const current = prefs.t(words[i]);
     for (let c = current.length; c >= 0; c--) {
       typedEl.textContent = current.slice(0, c);
       await sleep(35);
     }
     i = (i + 1) % words.length;
-    const next = words[i];
+    const next = prefs.t(words[i]);
     for (let c = 1; c <= next.length; c++) {
       typedEl.textContent = next.slice(0, c);
       await sleep(70);
@@ -195,10 +195,14 @@ $$(".filter").forEach((btn) => {
 });
 
 /* ---------- Contacto por WhatsApp ---------- */
-$("#waFloat").href = waLink(WHATSAPP_DEFAULT_MSG);
-
-// Botones con mensaje propio (por ejemplo, en las páginas de cada servicio)
-$$("[data-wa]").forEach((a) => (a.href = waLink(a.dataset.wa)));
+// Los mensajes se arman en el idioma elegido, y se actualizan si se cambia
+function updateWaLinks() {
+  $("#waFloat").href = waLink(prefs.t(WHATSAPP_DEFAULT_MSG));
+  // Botones con mensaje propio (por ejemplo, en las páginas de cada servicio)
+  $$("[data-wa]").forEach((a) => (a.href = waLink(prefs.t(a.dataset.wa))));
+}
+updateWaLinks();
+document.addEventListener("langchange", updateWaLinks);
 
 // El formulario solo existe en la página de inicio
 const form = $("#contactForm");
@@ -216,24 +220,26 @@ if (form) {
     });
 
     if (!valid) {
-      note.textContent = "Completá los campos obligatorios.";
+      note.textContent = prefs.t("Completá los campos obligatorios.");
       return;
     }
 
     const { nombre, empresa, servicio, mensaje } = Object.fromEntries(new FormData(form));
     const text =
-      `¡Hola INNOVA! Soy ${nombre.trim()}` +
-      (empresa.trim() ? ` de ${empresa.trim()}` : "") +
-      `.\nMe interesa: ${servicio}.\n\n${mensaje.trim()}`;
+      prefs.t("¡Hola INNOVA! Soy {nombre}", { nombre: nombre.trim() }) +
+      (empresa.trim() ? prefs.t(" de {empresa}", { empresa: empresa.trim() }) : "") +
+      prefs.t(".\nMe interesa: {servicio}.", { servicio }) +
+      `\n\n${mensaje.trim()}`;
 
     window.open(waLink(text), "_blank", "noopener");
-    note.textContent = "¡Listo! Abrimos WhatsApp con tu mensaje.";
+    note.textContent = prefs.t("¡Listo! Abrimos WhatsApp con tu mensaje.");
     form.reset();
   });
 
   $$("input, textarea, select", form).forEach((el) =>
     el.addEventListener("input", () => el.closest(".field").classList.remove("error"))
   );
+  document.addEventListener("langchange", () => (note.textContent = ""));
 }
 
 /* ---------- Año del footer ---------- */

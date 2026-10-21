@@ -1,0 +1,393 @@
+/* =========================================================
+   INNOVA — Traducciones al inglés
+   ---------------------------------------------------------
+   El sitio está escrito en español. Cada entrada asocia un
+   texto en español (tal cual aparece en el HTML) con su
+   versión en inglés. Si cambiás un texto en el HTML, actualizá
+   también su clave acá; si no, ese texto queda en español.
+
+   - text: textos sueltos, títulos de pestaña, descripciones,
+     aria-label, alt, mensajes de WhatsApp, etc.
+   - html: elementos marcados con data-i18n en el HTML, que se
+     traducen completos porque el orden cambia en inglés (por
+     ejemplo, "Desarrollo <span>Web</span>" → "Web <span>development</span>").
+     La clave es el texto visible del elemento.
+   ========================================================= */
+
+const TRANSLATIONS = {
+  en: {
+    text: {
+      /* ---------- Títulos de pestaña y descripciones ---------- */
+      "INNOVA | Consultora de Tecnología": "INNOVA | Technology Consulting",
+      "Nosotros | INNOVA": "About us | INNOVA",
+      "Servicios | INNOVA": "Services | INNOVA",
+      "Proyectos | INNOVA": "Projects | INNOVA",
+      "Contacto | INNOVA": "Contact | INNOVA",
+      "Desarrollo Web | INNOVA": "Web Development | INNOVA",
+      "Software a Medida | INNOVA": "Custom Software | INNOVA",
+      "Apps Móviles | INNOVA": "Mobile Apps | INNOVA",
+      "Infraestructura Web | INNOVA": "Web Infrastructure | INNOVA",
+      "Ciberseguridad | INNOVA": "Cybersecurity | INNOVA",
+      "Consultoría IT | INNOVA": "IT Consulting | INNOVA",
+      "INNOVA es una consultora de tecnología que impulsa a empresas con desarrollo web, software a medida, infraestructura y transformación digital.":
+        "INNOVA is a technology consulting firm that helps businesses grow with web development, custom software, infrastructure and digital transformation.",
+      "Conocé a INNOVA: nuestra misión, visión, valores y el equipo que lleva adelante cada proyecto.":
+        "Meet INNOVA: our mission, vision, values and the team behind every project.",
+      "Servicios de INNOVA: desarrollo web, software a medida, apps móviles, infraestructura web, ciberseguridad y consultoría IT.":
+        "INNOVA services: web development, custom software, mobile apps, web infrastructure, cybersecurity and IT consulting.",
+      "Proyectos realizados por INNOVA: sitios web, aplicaciones móviles y sistemas a medida.":
+        "Projects delivered by INNOVA: websites, mobile apps and custom systems.",
+      "Contactá a INNOVA: escribinos por WhatsApp o visitanos en Av. Sarmiento 1953, Corrientes.":
+        "Contact INNOVA: message us on WhatsApp or visit us at Av. Sarmiento 1953, Corrientes.",
+
+      /* ---------- Navegación, footer y accesibilidad ---------- */
+      "Inicio": "Home",
+      "Nosotros": "About us",
+      "Servicios": "Services",
+      "Proyectos": "Projects",
+      "Contacto": "Contact",
+      "Equipo": "Team",
+      "Navegación": "Navigation",
+      "Seguinos": "Follow us",
+      "Consultora de tecnología. Transformamos ideas en soluciones digitales.":
+        "Technology consulting. We turn ideas into digital solutions.",
+      "INNOVA. Todos los derechos reservados.": "INNOVA. All rights reserved.",
+      "Principal": "Main",
+      "Abrir menú": "Open menu",
+      "Ruta": "Breadcrumb",
+      "Bajar": "Scroll down",
+      "Volver arriba": "Back to top",
+      "LinkedIn de INNOVA": "INNOVA on LinkedIn",
+      "Escribinos por WhatsApp": "Message us on WhatsApp",
+      "Ubicación de INNOVA: Av. Sarmiento 1953, Corrientes": "INNOVA location: Av. Sarmiento 1953, Corrientes",
+      "Cambiar a modo claro": "Switch to light mode",
+      "Cambiar a modo oscuro": "Switch to dark mode",
+      "Cambiar idioma a español": "Switch language to Spanish",
+
+      /* ---------- Inicio ---------- */
+      "Consultora de tecnología": "Technology consulting",
+      "Transformamos ideas en": "We turn ideas into",
+      "soluciones digitales": "digital solutions",
+      "software a medida": "custom software",
+      "experiencias web": "web experiences",
+      "resultados reales": "real results",
+      "En": "At",
+      "acompañamos a empresas y emprendedores en su camino digital: diseñamos, desarrollamos y optimizamos tecnología que genera resultados reales.":
+        "we guide businesses and entrepreneurs through their digital journey: we design, build and optimize technology that delivers real results.",
+      "Hablemos de tu proyecto": "Let's talk about your project",
+      "Ver proyectos": "See projects",
+      "+ proyectos": "+ projects",
+      "clientes": "clients",
+      "Detrás de INNOVA": "Behind INNOVA",
+      "Conocé al equipo que hace posible cada proyecto": "Meet the team that makes every project possible",
+      "Conocenos": "Meet us",
+      "Qué hacemos": "What we do",
+      "Nuestros servicios": "Our services",
+      "Soluciones integrales para cada etapa de tu proyecto digital.": "End-to-end solutions for every stage of your digital project.",
+      "Ver más →": "Learn more →",
+      "Sitios institucionales, landing pages y tiendas online modernas, rápidas y adaptadas a todos los dispositivos.":
+        "Modern, fast corporate websites, landing pages and online stores that work on every device.",
+      "Sistemas de gestión y aplicaciones diseñadas específicamente para los procesos de tu negocio.":
+        "Management systems and applications designed specifically around your business processes.",
+      "Aplicaciones para Android e iOS con experiencias de usuario intuitivas y atractivas.":
+        "Android and iOS apps with intuitive, engaging user experiences.",
+      "Hosting, servidores, dominios y despliegues para que tu sitio o sistema esté siempre en línea, rápido y seguro.":
+        "Hosting, servers, domains and deployments so your site or system is always online, fast and secure.",
+      "Auditorías, buenas prácticas y protección de la información de tu empresa y tus clientes.":
+        "Audits, best practices and protection for your company's and your clients' information.",
+      "Diagnóstico tecnológico, planificación y acompañamiento en la transformación digital.":
+        "Technology assessment, planning and guidance through your digital transformation.",
+      "Portafolio": "Portfolio",
+      "Proyectos realizados": "Featured projects",
+      "Algunos de los trabajos que diseñamos y maquetamos.": "Some of the work we have designed and built.",
+      "Todos": "All",
+      "Sistemas": "Systems",
+      "Sistema": "System",
+      "Tienda Online": "Online Store",
+      "E‑commerce responsive con catálogo, carrito y pasarela de pagos.": "Responsive e‑commerce with catalog, cart and payment gateway.",
+      "Ver proyecto →": "View project →",
+      "App de Turnos": "Booking App",
+      "Aplicación móvil para reservar turnos en consultorios y centros de salud.": "Mobile app for booking appointments at clinics and health centers.",
+      "Dashboard de Ventas": "Sales Dashboard",
+      "Panel de control con métricas en tiempo real para la toma de decisiones.": "Control panel with real-time metrics for decision making.",
+      "Datos": "Data",
+      "Gráficos": "Charts",
+
+      /* ---------- Contacto ---------- */
+      "¿Tenés un proyecto en mente?": "Have a project in mind?",
+      "¿Tenés un proyecto": "Have a project",
+      "en mente?": "in mind?",
+      "Escribinos y te respondemos por WhatsApp a la brevedad.": "Write to us and we'll get back to you on WhatsApp shortly.",
+      "Completá el formulario y te respondemos por WhatsApp a la brevedad.": "Fill out the form and we'll get back to you on WhatsApp shortly.",
+      "Av. Sarmiento 1953, Corrientes, Argentina": "Av. Sarmiento 1953, Corrientes, Argentina",
+      "Lunes a viernes · 9 a 18 h": "Monday to Friday · 9 am to 6 pm",
+      "Nombre": "Name",
+      "Empresa (opcional)": "Company (optional)",
+      "Servicio de interés": "Service of interest",
+      "Contanos sobre tu proyecto": "Tell us about your project",
+      "Enviar por WhatsApp": "Send via WhatsApp",
+      "Completá los campos obligatorios.": "Please fill in the required fields.",
+      "¡Listo! Abrimos WhatsApp con tu mensaje.": "Done! We opened WhatsApp with your message.",
+
+      /* ---------- Mensajes de WhatsApp ---------- */
+      "¡Hola INNOVA! Quisiera hacer una consulta.": "Hi INNOVA! I'd like to ask a question.",
+      "¡Hola INNOVA! Vi sus proyectos y quisiera consultar por uno propio.": "Hi INNOVA! I saw your projects and I'd like to ask about one of my own.",
+      "¡Hola INNOVA! Quisiera consultar por sus servicios.": "Hi INNOVA! I'd like to ask about your services.",
+      "¡Hola INNOVA! Quisiera consultar por el servicio de Desarrollo Web.": "Hi INNOVA! I'd like to ask about your Web Development service.",
+      "¡Hola INNOVA! Quisiera consultar por el servicio de Software a Medida.": "Hi INNOVA! I'd like to ask about your Custom Software service.",
+      "¡Hola INNOVA! Quisiera consultar por el servicio de Apps Móviles.": "Hi INNOVA! I'd like to ask about your Mobile Apps service.",
+      "¡Hola INNOVA! Quisiera consultar por el servicio de Infraestructura Web.": "Hi INNOVA! I'd like to ask about your Web Infrastructure service.",
+      "¡Hola INNOVA! Quisiera consultar por el servicio de Ciberseguridad.": "Hi INNOVA! I'd like to ask about your Cybersecurity service.",
+      "¡Hola INNOVA! Quisiera consultar por el servicio de Consultoría IT.": "Hi INNOVA! I'd like to ask about your IT Consulting service.",
+      "¡Hola INNOVA! Soy {nombre}": "Hi INNOVA! I'm {nombre}",
+      " de {empresa}": " from {empresa}",
+      ".\nMe interesa: {servicio}.": ".\nI'm interested in: {servicio}.",
+
+      /* ---------- Nosotros ---------- */
+      "Quiénes somos": "Who we are",
+      "Conocé a": "Meet",
+      "Nuestra identidad y las personas que llevan adelante cada proyecto.": "Our identity and the people behind every project.",
+      "Nuestra identidad": "Our identity",
+      "En INNOVA ayudamos a pequeños y medianos emprendimientos de Corrientes a mejorar su presencia digital mediante el desarrollo de páginas web y aplicaciones personalizadas. Nos diferenciamos por ofrecer soluciones accesibles, modernas y fáciles de utilizar, acompañando al cliente durante el proceso. Además, combinamos diseño, tecnología e inteligencia artificial para crear productos digitales atractivos, pensados para cada usuario.":
+        "At INNOVA we help small and medium-sized businesses in Corrientes improve their digital presence by building custom websites and applications. What sets us apart is offering affordable, modern and easy-to-use solutions, and supporting each client throughout the process. We also combine design, technology and artificial intelligence to create engaging digital products built around each user.",
+      "Misión": "Mission",
+      "Impulsar la transformación digital de nuestros clientes con soluciones tecnológicas a medida, eficientes y escalables.":
+        "To drive our clients' digital transformation with tailored, efficient and scalable technology solutions.",
+      "Visión": "Vision",
+      "Ser la consultora de referencia para pymes de la región, reconocida por su innovación, cercanía y calidad.":
+        "To be the go-to consulting firm for small businesses in the region, known for innovation, closeness and quality.",
+      "Valores": "Values",
+      "Innovación": "Innovation",
+      "Transparencia": "Transparency",
+      "Compromiso": "Commitment",
+      "Trabajo en equipo": "Teamwork",
+      "Las personas detrás": "The people behind it",
+      "Nuestro equipo": "Our team",
+      "Cada integrante aporta su experiencia para llevar adelante cada proyecto.": "Each member brings their experience to move every project forward.",
+      "Infraestructura y DevOps": "Infrastructure & DevOps",
+      "Diseño UX/UI": "UX/UI Design",
+      "Análisis Funcional y Gestión de Proyectos": "Functional Analysis & Project Management",
+      "Desarrollo de Software": "Software Development",
+      "Gestión de Contenidos y Estrategia de Comunicación": "Content Management & Communication Strategy",
+      "Se asegura de que cada proyecto tenga dónde correr: administra servidores, redes y bases de datos, y mantiene entornos estables para probar y desplegar. Gestiona los backups y la seguridad, y documenta la infraestructura para que todo el equipo pueda entenderla.":
+        "Makes sure every project has somewhere to run: manages servers, networks and databases, and keeps stable environments for testing and deployment. Handles backups and security, and documents the infrastructure so the whole team can understand it.",
+      "Se encarga del diseño y la parte visual de los proyectos: crea interfaces atractivas, claras y fáciles de usar, pensadas para la experiencia del usuario. Se apoya en herramientas de diseño e inteligencia artificial para aportar ideas y mejorar cada proyecto.":
+        "Leads the design and visual side of each project: creates attractive, clear and easy-to-use interfaces focused on the user experience. Uses design and artificial intelligence tools to bring ideas and improve every project.",
+      "Conecta a los clientes con el equipo: escucha sus necesidades, entiende sus problemas y piensa qué solución tecnológica puede ayudarlos. Transmite los requerimientos a desarrollo y diseño, y organiza las tareas y los tiempos para que el resultado cumpla con lo que cada cliente necesita.":
+        "Connects clients with the team: listens to their needs, understands their problems and figures out which technology solution can help them. Passes requirements on to development and design, and organizes tasks and timelines so the result meets what each client needs.",
+      "Se encarga de resolver los problemas que surgen durante el desarrollo y de que el software funcione correctamente, sin bugs. Además, optimiza todo lo necesario para que la navegación de la web sea fluida, rápida y accesible para cualquier persona.":
+        "Solves the problems that come up during development and makes sure the software works correctly, without bugs. Also optimizes everything needed so browsing the site is smooth, fast and accessible to everyone.",
+      "Se encarga de los contenidos y la comunicación de INNOVA: estructura el relato institucional y define los lineamientos editoriales para que la propuesta de valor llegue clara a cada audiencia. Se apoya en herramientas de inteligencia artificial para preparar y pulir los textos.":
+        "Handles INNOVA's content and communication: shapes the company story and sets the editorial guidelines so our value proposition reaches every audience clearly. Uses artificial intelligence tools to draft and polish the copy.",
+      "LinkedIn de Gastón Storti": "Gastón Storti on LinkedIn",
+      "GitHub de Gastón Storti": "Gastón Storti on GitHub",
+      "LinkedIn de Agostina Pérez": "Agostina Pérez on LinkedIn",
+      "GitHub de Agostina Pérez": "Agostina Pérez on GitHub",
+      "LinkedIn de Sasha Ailén Roa": "Sasha Ailén Roa on LinkedIn",
+      "GitHub de Sasha Ailén Roa": "Sasha Ailén Roa on GitHub",
+      "LinkedIn de Santiago Lafuente": "Santiago Lafuente on LinkedIn",
+      "GitHub de Santiago Lafuente": "Santiago Lafuente on GitHub",
+      "LinkedIn de Candela May": "Candela May on LinkedIn",
+      "GitHub de Candela May": "Candela May on GitHub",
+
+      /* ---------- Proyectos y Servicios ---------- */
+      "Algunos de los trabajos que diseñamos y desarrollamos para nuestros clientes.": "Some of the work we have designed and built for our clients.",
+      "¿Querés que tu proyecto sea el próximo?": "Want your project to be next?",
+      "Contanos tu idea y te respondemos por WhatsApp a la brevedad.": "Tell us your idea and we'll get back to you on WhatsApp shortly.",
+      "Ir al formulario": "Go to the form",
+      "Nuestros": "Our",
+      "servicios": "services",
+      "Soluciones integrales para cada etapa de tu proyecto digital. Elegí un servicio para ver qué incluye, cómo trabajamos y con qué tecnologías.":
+        "End-to-end solutions for every stage of your digital project. Pick a service to see what it includes, how we work and which technologies we use.",
+      "¿No sabés qué servicio necesitás?": "Not sure which service you need?",
+      "Contanos tu idea y te ayudamos a elegir la mejor opción. Te respondemos por WhatsApp a la brevedad.":
+        "Tell us your idea and we'll help you choose the best option. We'll get back to you on WhatsApp shortly.",
+
+      /* ---------- Páginas de servicio: partes comunes ---------- */
+      "Desarrollo Web": "Web Development",
+      "Software a Medida": "Custom Software",
+      "Apps Móviles": "Mobile Apps",
+      "Infraestructura Web": "Web Infrastructure",
+      "Ciberseguridad": "Cybersecurity",
+      "Consultoría IT": "IT Consulting",
+      "Servicio 01": "Service 01",
+      "Servicio 02": "Service 02",
+      "Servicio 03": "Service 03",
+      "Servicio 04": "Service 04",
+      "Servicio 05": "Service 05",
+      "Servicio 06": "Service 06",
+      "Consultar por WhatsApp": "Ask on WhatsApp",
+      "Qué incluye": "What's included",
+      "¿Qué hacemos?": "What do we do?",
+      "Proceso": "Process",
+      "Cómo trabajamos": "How we work",
+      "Un proceso claro, con avances que podés ver en cada etapa.": "A clear process, with progress you can see at every stage.",
+      "Herramientas": "Tools",
+      "Tecnologías que usamos": "Technologies we use",
+      "Seguí explorando": "Keep exploring",
+      "Otros servicios": "Other services",
+      "Ver servicio →": "View service →",
+      "¿Te interesa este servicio?": "Interested in this service?",
+      "Contanos qué necesitás y te respondemos por WhatsApp a la brevedad.": "Tell us what you need and we'll get back to you on WhatsApp shortly.",
+
+      /* ---------- Desarrollo Web ---------- */
+      "Diseñamos y desarrollamos sitios institucionales, landing pages y tiendas online modernas, rápidas y adaptadas a todos los dispositivos.":
+        "We design and build modern, fast corporate websites, landing pages and online stores that work on every device.",
+      "Todo lo que tu negocio necesita para tener una presencia profesional en internet.": "Everything your business needs for a professional online presence.",
+      "Sitios institucionales": "Corporate websites",
+      "Presentá tu empresa, tus servicios y tu equipo con una web clara y profesional.": "Showcase your company, services and team with a clear, professional website.",
+      "Landing pages": "Landing pages",
+      "Páginas enfocadas en una campaña o producto, pensadas para convertir visitas en clientes.": "Pages focused on a campaign or product, built to turn visitors into customers.",
+      "Tiendas online": "Online stores",
+      "Catálogo, carrito y medios de pago para que puedas vender por internet.": "Catalog, cart and payment methods so you can sell online.",
+      "Diseño responsive": "Responsive design",
+      "Tu sitio se ve y funciona bien en celulares, tablets y computadoras.": "Your site looks and works great on phones, tablets and computers.",
+      "Velocidad y SEO": "Speed & SEO",
+      "Optimizamos la carga y la estructura del sitio para que aparezca mejor en Google.": "We optimize loading and site structure so you rank better on Google.",
+      "Autogestión": "Self-management",
+      "Un panel simple para que actualices textos, imágenes y productos sin depender de nadie.": "A simple dashboard to update text, images and products without depending on anyone.",
+      "Reunión inicial": "Kickoff meeting",
+      "Conocemos tu negocio, tus objetivos y lo que esperás de la web.": "We get to know your business, your goals and what you expect from the website.",
+      "Diseño": "Design",
+      "Armamos la propuesta visual y la estructura del sitio para que la apruebes.": "We put together the visual proposal and site structure for your approval.",
+      "Desarrollo": "Development",
+      "Programamos el sitio, cargamos el contenido y lo probamos en todos los dispositivos.": "We code the site, load the content and test it on every device.",
+      "Publicación y soporte": "Launch & support",
+      "Lo ponemos en línea y te acompañamos con ajustes y mantenimiento.": "We put it online and keep supporting you with tweaks and maintenance.",
+
+      /* ---------- Software a Medida ---------- */
+      "Creamos sistemas de gestión y aplicaciones diseñadas específicamente para los procesos de tu negocio.":
+        "We build management systems and applications designed specifically around your business processes.",
+      "Herramientas hechas para tu forma de trabajar, no al revés.": "Tools built around the way you work, not the other way around.",
+      "Sistemas de gestión": "Management systems",
+      "Stock, ventas, clientes, turnos o lo que tu negocio necesite controlar.": "Inventory, sales, customers, appointments or whatever your business needs to track.",
+      "Automatización de procesos": "Process automation",
+      "Eliminamos tareas repetitivas para que tu equipo gane tiempo.": "We remove repetitive tasks so your team saves time.",
+      "Integraciones": "Integrations",
+      "Conectamos el sistema con herramientas que ya usás: facturación, pagos o planillas.": "We connect the system with tools you already use: invoicing, payments or spreadsheets.",
+      "Reportes": "Reports",
+      "Información clara y actualizada para tomar mejores decisiones.": "Clear, up-to-date information to make better decisions.",
+      "Usuarios y permisos": "Users & permissions",
+      "Cada persona accede solo a lo que necesita, con distintos niveles de acceso.": "Each person accesses only what they need, with different access levels.",
+      "Mantenimiento y evolución": "Maintenance & evolution",
+      "El sistema crece con tu negocio: sumamos funciones cuando las necesitás.": "The system grows with your business: we add features when you need them.",
+      "Relevamiento": "Discovery",
+      "Analizamos cómo trabaja tu equipo hoy y qué problemas hay que resolver.": "We analyze how your team works today and which problems need solving.",
+      "Propuesta": "Proposal",
+      "Definimos las funciones, los tiempos y el presupuesto del sistema.": "We define the system's features, timeline and budget.",
+      "Desarrollo por etapas": "Iterative development",
+      "Entregamos avances periódicos para que puedas probarlos y opinar.": "We deliver regular updates so you can try them and give feedback.",
+      "Implementación": "Rollout",
+      "Instalamos el sistema, migramos los datos y capacitamos a tu equipo.": "We install the system, migrate the data and train your team.",
+      "APIs REST": "REST APIs",
+
+      /* ---------- Apps Móviles ---------- */
+      "Desarrollamos aplicaciones para Android e iOS con experiencias de usuario intuitivas y atractivas.":
+        "We build Android and iOS apps with intuitive, engaging user experiences.",
+      "Llevá tu negocio al bolsillo de tus clientes.": "Put your business in your customers' pockets.",
+      "Android e iOS": "Android & iOS",
+      "Una sola aplicación que funciona en los dos sistemas, con menos costo y tiempo.": "A single app that runs on both platforms, for less cost and time.",
+      "Pantallas simples e intuitivas, pensadas para quien va a usar la app.": "Simple, intuitive screens designed for the people who will use the app.",
+      "Notificaciones": "Notifications",
+      "Avisos para mantener a tus usuarios informados de novedades y promociones.": "Alerts to keep your users informed about news and promotions.",
+      "Funciona sin conexión": "Works offline",
+      "Las funciones principales siguen disponibles aunque no haya internet.": "Core features stay available even without an internet connection.",
+      "Conexión con tu sistema": "Connected to your system",
+      "La app se integra con tu web o tu sistema de gestión.": "The app integrates with your website or management system.",
+      "Publicación en tiendas": "App store publishing",
+      "Nos encargamos de subirla a Google Play y a la App Store.": "We take care of publishing it on Google Play and the App Store.",
+      "Idea y alcance": "Idea & scope",
+      "Definimos qué tiene que hacer la app y para quién es.": "We define what the app must do and who it is for.",
+      "Prototipo": "Prototype",
+      "Diseñamos las pantallas para que puedas ver cómo va a funcionar antes de programarla.": "We design the screens so you can see how it will work before we code it.",
+      "Desarrollo y pruebas": "Development & testing",
+      "Programamos la app y la probamos en distintos dispositivos.": "We code the app and test it on different devices.",
+      "Publicación": "Launch",
+      "La publicamos en las tiendas y seguimos con mejoras y soporte.": "We publish it on the stores and keep going with improvements and support.",
+
+      /* ---------- Infraestructura Web ---------- */
+      "Ponemos tu proyecto en línea y lo mantenemos funcionando: hosting, servidores, dominios y despliegues estables y seguros.":
+        "We get your project online and keep it running: stable, secure hosting, servers, domains and deployments.",
+      "La base técnica para que tu sitio o sistema esté siempre disponible.": "The technical foundation to keep your site or system always available.",
+      "Hosting y servidores": "Hosting & servers",
+      "Elegimos y configuramos el servidor que mejor se adapta a tu proyecto.": "We choose and set up the server that best fits your project.",
+      "Dominios y correo": "Domains & email",
+      "Registro de dominio, configuración de DNS y correos con el nombre de tu empresa.": "Domain registration, DNS setup and email addresses with your company name.",
+      "Certificados SSL": "SSL certificates",
+      "Tu sitio con HTTPS, para que la conexión de tus visitantes sea segura.": "Your site on HTTPS, so your visitors' connection is secure.",
+      "Despliegues automáticos": "Automated deployments",
+      "Cada cambio se publica de forma ordenada y sin cortar el servicio.": "Every change is released in an orderly way, without downtime.",
+      "Copias de seguridad": "Backups",
+      "Backups automáticos para recuperar todo rápido si algo sale mal.": "Automatic backups to restore everything quickly if something goes wrong.",
+      "Monitoreo": "Monitoring",
+      "Controlamos que el sitio esté en línea y te avisamos si algo falla.": "We check that the site is online and let you know if something fails.",
+      "Diagnóstico": "Assessment",
+      "Revisamos dónde está alojado tu proyecto hoy y qué necesita.": "We review where your project is hosted today and what it needs.",
+      "Diseño de la infraestructura": "Infrastructure design",
+      "Elegimos servidores, servicios y costos según tu presupuesto.": "We choose servers, services and costs according to your budget.",
+      "Configuración y migración": "Setup & migration",
+      "Preparamos todo y mudamos tu sitio sin perder información.": "We set everything up and move your site without losing any data.",
+      "Monitoreo y soporte": "Monitoring & support",
+      "Seguimos de cerca el funcionamiento y resolvemos los problemas.": "We keep a close eye on how it runs and fix any issues.",
+
+      /* ---------- Ciberseguridad ---------- */
+      "Protegemos la información de tu empresa y de tus clientes con auditorías, buenas prácticas y soluciones de seguridad.":
+        "We protect your company's and your clients' information with audits, best practices and security solutions.",
+      "Prevenir es mucho más barato que recuperarse de un ataque.": "Prevention is far cheaper than recovering from an attack.",
+      "Auditoría de seguridad": "Security audit",
+      "Revisamos tus sistemas, tu red y tus equipos para encontrar puntos débiles.": "We review your systems, network and devices to find weak spots.",
+      "Pruebas de vulnerabilidades": "Vulnerability testing",
+      "Analizamos tus sitios y sistemas, con tu autorización, para detectar fallas.": "With your authorization, we test your sites and systems to detect flaws.",
+      "Gestión de accesos": "Access management",
+      "Contraseñas seguras, verificación en dos pasos y permisos bien definidos.": "Strong passwords, two-step verification and well-defined permissions.",
+      "Plan de recuperación": "Recovery plan",
+      "Copias de seguridad y pasos claros para volver a funcionar ante un incidente.": "Backups and clear steps to get back up and running after an incident.",
+      "Capacitación del equipo": "Team training",
+      "Enseñamos a reconocer engaños como el phishing y a trabajar de forma segura.": "We teach your team to spot scams like phishing and to work safely.",
+      "Políticas de seguridad": "Security policies",
+      "Reglas simples y documentadas para el uso de la información en tu empresa.": "Simple, documented rules for handling information in your company.",
+      "Evaluación": "Assessment",
+      "Relevamos tus sistemas y la forma en que se maneja la información.": "We survey your systems and the way information is handled.",
+      "Informe": "Report",
+      "Te explicamos los riesgos encontrados y cuáles son más urgentes.": "We explain the risks we found and which ones are most urgent.",
+      "Corrección": "Remediation",
+      "Aplicamos las mejoras y configuramos las protecciones necesarias.": "We apply the improvements and set up the necessary protections.",
+      "Seguimiento": "Follow-up",
+      "Hacemos controles periódicos para que la seguridad se mantenga en el tiempo.": "We run periodic checks so security holds up over time.",
+      "Verificación en dos pasos": "Two-step verification",
+      "Cifrado": "Encryption",
+
+      /* ---------- Consultoría IT ---------- */
+      "Te ayudamos a entender qué tecnología necesita tu empresa para crecer y te acompañamos en todo el proceso de cambio.":
+        "We help you understand what technology your company needs to grow and support you throughout the change.",
+      "Una mirada externa para tomar mejores decisiones tecnológicas.": "An outside perspective for better technology decisions.",
+      "Diagnóstico tecnológico": "Technology assessment",
+      "Analizamos las herramientas y sistemas que usa tu empresa hoy.": "We analyze the tools and systems your company uses today.",
+      "Plan de transformación digital": "Digital transformation plan",
+      "Armamos una hoja de ruta con prioridades, tiempos y costos.": "We build a roadmap with priorities, timelines and costs.",
+      "Selección de herramientas": "Tool selection",
+      "Te recomendamos el software y los servicios que mejor se adaptan a vos.": "We recommend the software and services that suit you best.",
+      "Optimización de procesos": "Process optimization",
+      "Detectamos tareas que se pueden simplificar o automatizar.": "We spot tasks that can be simplified or automated.",
+      "Acompañamiento": "Ongoing support",
+      "Te acompañamos durante la implementación para que todo salga bien.": "We stay with you during implementation so everything goes smoothly.",
+      "Capacitación": "Training",
+      "Formamos a tu equipo para que aproveche al máximo las nuevas herramientas.": "We train your team to get the most out of the new tools.",
+      "Conocer tu empresa": "Getting to know you",
+      "Entendemos cómo trabajan, qué objetivos tienen y qué les preocupa.": "We learn how you work, what your goals are and what concerns you.",
+      "Evaluamos la tecnología actual y detectamos oportunidades de mejora.": "We evaluate your current technology and spot opportunities for improvement.",
+      "Plan de acción": "Action plan",
+      "Te presentamos una propuesta concreta y priorizada.": "We present a concrete, prioritized proposal.",
+      "Te ayudamos a implementar los cambios y medimos los resultados.": "We help you implement the changes and measure the results.",
+    },
+
+    html: {
+      "Proyectos realizados": 'Our <span class="gradient-text">work</span>',
+      "Desarrollo Web": 'Web <span class="gradient-text">development</span>',
+      "Software a medida": 'Custom <span class="gradient-text">software</span>',
+      "Apps móviles": 'Mobile <span class="gradient-text">apps</span>',
+      "Infraestructura web": 'Web <span class="gradient-text">infrastructure</span>',
+      "Consultoría IT": 'IT <span class="gradient-text">consulting</span>',
+    },
+  },
+};
