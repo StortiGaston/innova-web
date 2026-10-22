@@ -68,54 +68,43 @@
     </section>
 
     <!-- ===================== PROYECTOS / PORTAFOLIO ===================== -->
-    <!-- EDITAR: reemplazar por proyectos reales. Para usar captura: dentro de .project__media
-         agregar <img src="img/proyecto.jpg" alt="..." /> en lugar del mockup. -->
+    <!-- Para sumar un proyecto: copiar un <article class="project">, poner su captura en
+         img/proyectos/ y crear su página en proyectos/. -->
     <section class="section section--alt">
       <div class="container">
         <div class="filters reveal" role="tablist">
           <button class="filter active" data-filter="all">Todos</button>
           <button class="filter" data-filter="web">Web</button>
-          <button class="filter" data-filter="app">Apps</button>
           <button class="filter" data-filter="sistema">Sistemas</button>
         </div>
 
         <div class="projects">
           <article class="project reveal" data-category="web">
-            <div class="project__media" style="--c1:#6d5dfc;--c2:#22d3ee">
-              <div class="mock"><span></span><span></span><span></span><i></i><i></i><i></i></div>
+            <div class="project__media project__media--shot">
+              <img src="img/proyectos/candemay-studio-card.jpg" alt="Página de inicio del sitio de CandeMay Studio" loading="lazy" />
             </div>
             <div class="project__body">
               <span class="project__cat">Web</span>
-              <h3>Tienda Online</h3>
-              <p>E‑commerce responsive con catálogo, carrito y pasarela de pagos.</p>
+              <h3>CandeMay Studio</h3>
+              <p>Sitio web para un estudio de estética y cosmiatría, con catálogo de tratamientos y pedido de turnos.</p>
               <ul class="tags tags--sm"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-              <a href="#" class="project__link">Ver proyecto →</a>
-            </div>
-          </article>
-
-          <article class="project reveal" data-category="app">
-            <div class="project__media" style="--c1:#34d399;--c2:#3b82f6">
-              <div class="mock mock--phone"><span></span><i></i><i></i><i></i></div>
-            </div>
-            <div class="project__body">
-              <span class="project__cat">App</span>
-              <h3>App de Turnos</h3>
-              <p>Aplicación móvil para reservar turnos en consultorios y centros de salud.</p>
-              <ul class="tags tags--sm"><li>Mobile</li><li>UX/UI</li></ul>
-              <a href="#" class="project__link">Ver proyecto →</a>
+              <a href="proyectos/candemay-studio.html" class="project__link">Ver proyecto →</a>
             </div>
           </article>
 
           <article class="project reveal" data-category="sistema">
-            <div class="project__media" style="--c1:#a78bfa;--c2:#ec4899">
-              <div class="mock mock--dash"><span></span><span></span><span></span><i></i><i></i><i></i></div>
+            <div class="project__media project__media--shot" style="--shot-bg:#f1f3f7">
+              <img src="img/proyectos/proyecto-gimnasio-card.jpg" alt="Página de inicio del sitio de Proyecto-Gimnasio" loading="lazy" />
             </div>
             <div class="project__body">
               <span class="project__cat">Sistema</span>
-              <h3>Dashboard de Ventas</h3>
-              <p>Panel de control con métricas en tiempo real para la toma de decisiones.</p>
-              <ul class="tags tags--sm"><li>Datos</li><li>Gráficos</li></ul>
-              <a href="#" class="project__link">Ver proyecto →</a>
+              <h3>Proyecto-Gimnasio</h3>
+              <p>Software de gestión para gimnasios que funciona sin internet: ingreso con el DNI, cuotas, caja y avisos.</p>
+              <ul class="tags tags--sm"><li>React</li><li>Tauri</li><li>Supabase</li></ul>
+              <div class="project__links">
+                <a href="proyectos/proyecto-gimnasio.html" class="project__link">Ver proyecto →</a>
+                <a href="https://proyectogimnasio.com.ar" class="project__link" target="_blank" rel="noopener">Visitar sitio ↗</a>
+              </div>
             </div>
           </article>
         </div>

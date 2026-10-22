@@ -103,15 +103,107 @@ const TRANSLATIONS = {
       "Todos": "All",
       "Sistemas": "Systems",
       "Sistema": "System",
-      "Tienda Online": "Online Store",
-      "E‑commerce responsive con catálogo, carrito y pasarela de pagos.": "Responsive e‑commerce with catalog, cart and payment gateway.",
       "Ver proyecto →": "View project →",
-      "App de Turnos": "Booking App",
-      "Aplicación móvil para reservar turnos en consultorios y centros de salud.": "Mobile app for booking appointments at clinics and health centers.",
-      "Dashboard de Ventas": "Sales Dashboard",
-      "Panel de control con métricas en tiempo real para la toma de decisiones.": "Control panel with real-time metrics for decision making.",
-      "Datos": "Data",
-      "Gráficos": "Charts",
+
+      "Visitar sitio ↗": "Visit website ↗",
+
+      /* ---------- Proyecto: Proyecto-Gimnasio ---------- */
+      "Proyecto-Gimnasio: software de gestión para gimnasios que funciona sin internet, con su sitio web.":
+        "Proyecto-Gimnasio: gym management software that works offline, with its own website.",
+      "Software de gestión para gimnasios que funciona sin internet: ingreso con el DNI, cuotas, caja y avisos.":
+        "Gym management software that works offline: ID check-in, memberships, cash register and alerts.",
+      "Página de inicio del sitio de Proyecto-Gimnasio": "Proyecto-Gimnasio website home page",
+      "Abrir el sitio de Proyecto-Gimnasio": "Open the Proyecto-Gimnasio website",
+      "Proyecto · Software a Medida": "Project · Custom Software",
+      "Software de gestión para gimnasios: una app de escritorio que funciona aunque se corte internet, con ingreso por DNI, cuotas, caja y avisos, y un sitio web para presentarla.":
+        "Gym management software: a desktop app that keeps working when the internet goes down, with ID check-in, memberships, cash register and alerts, plus a website to present it.",
+      "Gimnasios": "Gyms",
+      "App de escritorio": "Desktop app",
+      "Sitio web": "Website",
+      "Los gimnasios necesitaban dejar las planillas y tener una recepción rápida que no se frene cuando falla internet.":
+        "Gyms needed to leave spreadsheets behind and have a fast front desk that doesn't stop when the internet fails.",
+      "Recepción ágil": "Fast front desk",
+      "Registrar cada ingreso en segundos y ver al instante si la cuota del socio está al día.":
+        "Log every check-in in seconds and instantly see whether the member's fee is up to date.",
+      "Cuotas bajo control": "Memberships under control",
+      "Cobrar, saber quién está por vencer y avisarle antes de que deje de venir.":
+        "Collect payments, know who is about to expire and reach out before they stop coming.",
+      "El negocio a la vista": "The business at a glance",
+      "Caja diaria, reportes y un tablero para el dueño, sin estar en el mostrador.":
+        "Daily cash register, reports and an owner dashboard, without being at the front desk.",
+      "Una app liviana para Windows, conectada a la nube, y un sitio web con demo y descargas.":
+        "A lightweight Windows app connected to the cloud, and a website with a demo and downloads.",
+      "Ingreso con el DNI": "ID check-in",
+      "Se escanea el código del DNI con un lector 2D y el ingreso queda registrado con la hora.":
+        "The ID barcode is scanned with a 2D reader and the check-in is logged with the time.",
+      "Funciona sin internet": "Works offline",
+      "La recepción sigue andando sin conexión y todo se sincroniza solo cuando vuelve.":
+        "The front desk keeps working offline and everything syncs automatically when the connection returns.",
+      "Cuotas y caja": "Payments & cash register",
+      "Cobro de cuotas, cierre del día por método de pago y por usuario, reportes y exportación a Excel.":
+        "Membership payments, daily close by payment method and user, reports and Excel export.",
+      "Clases y tablero": "Classes & dashboard",
+      "Clases con cupo, avisos de vencimiento y un tablero con socios activos, cobros y horarios pico.":
+        "Classes with limited spots, expiry alerts and a dashboard with active members, payments and peak hours.",
+      "Varias sedes y roles": "Multiple branches & roles",
+      "Un solo padrón para todas las sucursales, con usuarios de administrador y de profesor.":
+        "A single member list for every branch, with admin and trainer users.",
+      "Liviana y actualizada": "Lightweight & up to date",
+      "Instalador de 2,6 MB, arranque en menos de 2 segundos y actualizaciones automáticas.":
+        "A 2.6 MB installer, startup in under 2 seconds and automatic updates.",
+      "¿Necesitás un sistema para tu negocio?": "Need a system for your business?",
+      "Ver servicio de Software a Medida": "See our Custom Software service",
+      "¡Hola INNOVA! Vi el proyecto Proyecto-Gimnasio y quisiera un sistema para mi negocio.":
+        "Hi INNOVA! I saw the Proyecto-Gimnasio project and I'd like a system for my business.",
+
+      /* ---------- Proyecto: CandeMay Studio ---------- */
+      "CandeMay Studio | INNOVA": "CandeMay Studio | INNOVA",
+      "CandeMay Studio: sitio web que diseñamos y desarrollamos para un estudio de estética y cosmiatría.":
+        "CandeMay Studio: a website we designed and built for a beauty and skincare studio.",
+      "Sitio web para un estudio de estética y cosmiatría, con catálogo de tratamientos y pedido de turnos.":
+        "Website for a beauty and skincare studio, with a treatment catalog and appointment requests.",
+      "Página de inicio del sitio de CandeMay Studio": "CandeMay Studio website home page",
+      "Proyecto · Desarrollo Web": "Project · Web Development",
+      "Sitio web para un estudio de estética y cosmiatría: una presencia digital elegante y cálida que presenta sus tratamientos y facilita pedir turno desde cualquier dispositivo.":
+        "Website for a beauty and skincare studio: an elegant, warm online presence that showcases its treatments and makes booking easy from any device.",
+      "Estética y cosmiatría": "Beauty & skincare",
+      "Sitio institucional": "Corporate website",
+      "Responsive": "Responsive",
+      "El desafío": "The challenge",
+      "Objetivos del proyecto": "Project goals",
+      "El estudio necesitaba un sitio que transmitiera tranquilidad, cuidado personal y profesionalismo, y que convirtiera visitas en turnos.":
+        "The studio needed a website that conveyed calm, self-care and professionalism, and turned visits into bookings.",
+      "Dar a conocer los servicios": "Showcase the services",
+      "Presentar todos los tratamientos de forma clara, ordenada y atractiva.": "Present every treatment in a clear, organized and appealing way.",
+      "Atraer nuevos clientes": "Attract new clients",
+      "Un diseño cuidado y contenido visual que despierte interés y genere consultas.": "Thoughtful design and visual content that spark interest and generate inquiries.",
+      "Fortalecer la identidad": "Strengthen the brand",
+      "Una imagen digital profesional que transmita confianza, bienestar y belleza.": "A professional online image that conveys trust, well-being and beauty.",
+      "La solución": "The solution",
+      "Qué hicimos": "What we did",
+      "Un sitio a medida, liviano y fácil de mantener, pensado primero para el celular.": "A custom, lightweight, easy-to-maintain website, designed mobile-first.",
+      "Identidad visual": "Visual identity",
+      "Paleta verde salvia y rosa nude, tipografías script y serif, formas orgánicas y fotografía cálida.":
+        "Sage green and nude pink palette, script and serif typefaces, organic shapes and warm photography.",
+      "Catálogo de tratamientos": "Treatment catalog",
+      "Servicios faciales, corporales y de labios organizados por categoría, con filtros y descripción de cada uno.":
+        "Facial, body and lip treatments organized by category, with filters and a description of each.",
+      "Pedido de turnos": "Appointment requests",
+      "Formulario con validación en tiempo real y el tratamiento elegido ya seleccionado desde cada tarjeta.":
+        "A form with real-time validation and the chosen treatment preselected from each card.",
+      "Homecare y galería": "Homecare & gallery",
+      "Secciones de asesoramiento cosmiátrico y una galería de resultados con vista ampliada.":
+        "Skincare advice sections and a results gallery with an enlarged view.",
+      "Contacto por WhatsApp": "WhatsApp contact",
+      "Las consultas pueden llegar directo al WhatsApp del estudio, con los datos del turno ya cargados.":
+        "Inquiries can go straight to the studio's WhatsApp, with the booking details already filled in.",
+      "Accesibilidad y SEO": "Accessibility & SEO",
+      "Contraste adecuado, navegación con teclado, animaciones suaves y datos estructurados para Google.":
+        "Proper contrast, keyboard navigation, gentle animations and structured data for Google.",
+      "¿Querés un sitio así para tu negocio?": "Want a website like this for your business?",
+      "Ver servicio de Desarrollo Web": "See our Web Development service",
+      "¡Hola INNOVA! Vi el proyecto de CandeMay Studio y quisiera un sitio para mi negocio.":
+        "Hi INNOVA! I saw the CandeMay Studio project and I'd like a website for my business.",
 
       /* ---------- Contacto ---------- */
       "¿Tenés un proyecto en mente?": "Have a project in mind?",
