@@ -43,7 +43,7 @@ Este repositorio contiene el sitio institucional de INNOVA, nuestra carta de pre
 - **Inicio**: presentación de la consultora, servicios destacados, proyectos recientes y contacto directo.
 - **Nosotros**: nuestra identidad (misión, visión y valores) y el equipo detrás de cada proyecto.
 - **Servicios**: catálogo completo, con una página por servicio que detalla qué incluye, cómo trabajamos y con qué tecnologías.
-- **Proyectos**: portafolio de trabajos realizados, filtrable por categoría (web, apps y sistemas).
+- **Proyectos**: portafolio de trabajos realizados, filtrable por categoría (web y sistemas), con una página por proyecto.
 - **Contacto**: formulario, dirección, horarios de atención y mapa de ubicación.
 
 ### Funcionalidades destacadas
@@ -57,6 +57,7 @@ Este repositorio contiene el sitio institucional de INNOVA, nuestra carta de pre
 - **Español e inglés**: botón ES/EN en el menú que traduce la página al instante, sin recargarla, incluidos los mensajes de WhatsApp. Las traducciones están en `js/translations.js`: si cambiás un texto en el HTML, actualizá también su entrada ahí.
 - **Accesible**: respeta la preferencia de movimiento reducido del sistema e incluye etiquetas para lectores de pantalla.
 - **Liviano y rápido**: hecho con HTML, CSS y JavaScript puros, sin librerías ni dependencias externas.
+- **Siempre actualizado**: los archivos CSS y JS se cargan con un número de versión (`styles.css?v=2`). Cuando los modifiques, subí ese número en todas las páginas para que los visitantes no vean la versión vieja guardada en su navegador.
 
 ## Equipo
 
