@@ -97,6 +97,25 @@ const TRANSLATIONS = {
         "Audits, best practices and protection for your company's and your clients' information.",
       "Diagnóstico tecnológico, planificación y acompañamiento en la transformación digital.":
         "Technology assessment, planning and guidance through your digital transformation.",
+
+      /* ---------- Video de la metodología ---------- */
+      "Mirá en 1 minuto cómo llevamos una idea hasta el producto funcionando":
+        "See in 1 minute how we take an idea all the way to a working product",
+      "Ver el video": "Watch the video",
+      "Nuestra metodología": "Our methodology",
+      "En poco más de un minuto mostramos el camino completo: del primer mensaje del cliente al sistema funcionando en su negocio.":
+        "In just over a minute we show the whole journey: from the client's first message to the system up and running in their business.",
+      "Reproducir el video de la metodología de INNOVA": "Play the INNOVA methodology video",
+      "Metodología INNOVA": "INNOVA methodology",
+      "Del mensaje del cliente al sistema funcionando": "From the client's message to a working system",
+      "Tu navegador no puede reproducir este video.": "Your browser can't play this video.",
+      "Descargalo acá": "Download it here",
+      "El pedido": "The request",
+      "El brief": "The brief",
+      "El prompt": "The prompt",
+      "El vibe coding": "Vibe coding",
+      "Preview y ajustes": "Preview and tweaks",
+      "Producto vivo": "Live product",
       "Portafolio": "Portfolio",
       "Proyectos realizados": "Featured projects",
       "Algunos de los trabajos que diseñamos y maquetamos.": "Some of the work we have designed and built.",

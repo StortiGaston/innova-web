@@ -242,5 +242,21 @@ if (form) {
   document.addEventListener("langchange", () => (note.textContent = ""));
 }
 
+/* ---------- Video de la metodología (solo en la página de servicios) ---------- */
+const metodologiaVideo = $("#videoMetodologia");
+const metodologiaCover = $("#videoCover");
+
+if (metodologiaVideo && metodologiaCover) {
+  const showCover = (show) => metodologiaCover.classList.toggle("is-hidden", !show);
+
+  metodologiaCover.addEventListener("click", () => {
+    showCover(false);
+    metodologiaVideo.play();
+  });
+  metodologiaVideo.addEventListener("play", () => showCover(false));
+  // Al terminar, vuelve la portada: al tocarla, el video arranca de nuevo desde el inicio
+  metodologiaVideo.addEventListener("ended", () => showCover(true));
+}
+
 /* ---------- Año del footer ---------- */
 $("#year").textContent = new Date().getFullYear();

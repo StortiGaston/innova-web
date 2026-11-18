@@ -42,13 +42,14 @@ Este repositorio contiene el sitio institucional de INNOVA, nuestra carta de pre
 
 - **Inicio**: presentación de la consultora, servicios destacados, proyectos recientes y contacto directo.
 - **Nosotros**: nuestra identidad (misión, visión y valores) y el equipo detrás de cada proyecto.
-- **Servicios**: catálogo completo, con una página por servicio que detalla qué incluye, cómo trabajamos y con qué tecnologías.
+- **Servicios**: catálogo completo, con una página por servicio que detalla qué incluye, cómo trabajamos y con qué tecnologías. Incluye el video de nuestra metodología de trabajo, con acceso directo desde el inicio.
 - **Proyectos**: portafolio de trabajos realizados, filtrable por categoría (web y sistemas), con una página por proyecto.
 - **Contacto**: formulario, dirección, horarios de atención y mapa de ubicación.
 
 ### Funcionalidades destacadas
 
 - **Contacto inmediato por WhatsApp**: el formulario arma el mensaje con los datos de la consulta y lo abre directamente en WhatsApp. También hay un botón flotante siempre visible.
+- **Video de la metodología**: en la página de Servicios mostramos en poco más de un minuto cómo convertimos el pedido de un cliente en un producto funcionando. El archivo está en `video/innova-metodologia.mp4`: para cambiarlo, reemplazalo por el nuevo (se carga solo cuando el visitante toca reproducir).
 - **Portafolio con filtros**: los proyectos se filtran por categoría al instante, sin recargar la página.
 - **Diseño adaptable**: la experiencia es igual de cuidada en computadoras, tablets y celulares.
 - **Animaciones y microinteracciones**: textos que se escriben solos, contadores animados, elementos que aparecen al hacer scroll, botones con efecto magnético y tarjetas que reaccionan al mouse.
@@ -57,7 +58,7 @@ Este repositorio contiene el sitio institucional de INNOVA, nuestra carta de pre
 - **Español e inglés**: botón ES/EN en el menú que traduce la página al instante, sin recargarla, incluidos los mensajes de WhatsApp. Las traducciones están en `js/translations.js`: si cambiás un texto en el HTML, actualizá también su entrada ahí.
 - **Accesible**: respeta la preferencia de movimiento reducido del sistema e incluye etiquetas para lectores de pantalla.
 - **Liviano y rápido**: hecho con HTML, CSS y JavaScript puros, sin librerías ni dependencias externas.
-- **Siempre actualizado**: los archivos CSS y JS se cargan con un número de versión (`styles.css?v=2`). Cuando los modifiques, subí ese número en todas las páginas para que los visitantes no vean la versión vieja guardada en su navegador.
+- **Siempre actualizado**: los archivos CSS y JS se cargan con un número de versión (`styles.css?v=3`). Cuando los modifiques, subí ese número en todas las páginas para que los visitantes no vean la versión vieja guardada en su navegador.
 
 ## Equipo
 
